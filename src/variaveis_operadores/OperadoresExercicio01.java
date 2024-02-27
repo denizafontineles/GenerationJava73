@@ -1,8 +1,8 @@
-package atividades;
+package variaveis_operadores;
 
 import java.util.Scanner;
 
-public class VariaveisOperadores01 {
+public class OperadoresExercicio01 {
 	
 	public static void main(String[] args) {
 		

@@ -1,8 +1,8 @@
-package atividades;
+package variaveis_operadores;
 
 import java.util.Scanner;
 
-public class VariaveisOperadores02 {
+public class OperadoresExercicio02 {
 
 	/**
 	 * @param args
