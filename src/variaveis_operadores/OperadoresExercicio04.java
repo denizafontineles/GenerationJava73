@@ -1,8 +1,8 @@
-package atividades;
+package variaveis_operadores;
 
 import java.util.Scanner;
 
-public class VariaveisOperadores04 {
+public class OperadoresExercicio04 {
 	public static void main(String[] args) {
 		// variaveis
 		float vetor[] = new float[4];
