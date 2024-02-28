@@ -20,13 +20,11 @@ public class RepeticaoWhileExercicio03 {
         	}else {
         		cont3++;
         	}
-            System.out.print("\nDigite sua idade: ");
+            System.out.print("Digite sua idade: ");
             idade = read.nextInt();
         }
         System.out.println("\nTotal de pessoas menores de 21 anos: " + cont1);
         System.out.println("Total de pessoas maiores de 50 anos: " + cont2);
-        System.out.println("\n-- \n");
         System.out.println("Total de pessoas entre 22 e 49 anos: " + cont3);
-
 	}
 }

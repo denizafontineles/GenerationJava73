@@ -10,7 +10,7 @@ public class RepeticaoDoWhileExercicio05 {
         Scanner read = new Scanner(System.in);
 
         do {
-            System.out.print("\nDigite um número inteiro: ");
+            System.out.print("Digite um número inteiro: ");
             num = read.nextInt();
             
             if (num > 0) {

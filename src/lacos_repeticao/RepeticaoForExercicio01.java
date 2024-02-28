@@ -6,10 +6,11 @@ public class RepeticaoForExercicio01 {
 
 	public static void main(String[] args) {
 		
-        int n1, n2, multi;
+        int n1, n2;
         Scanner read = new Scanner(System.in);
 
-        System.out.println("\nUsuário, digite 2 números, onde o primeiro número deve ser maior que o segundo número.");
+        System.out.println("\nUsuário, digite 2 números, onde "
+        		+ "o primeiro número deve ser maior que o segundo número.");
         
         System.out.print("\nDigite o primeiro número: ");
         n1 = read.nextInt();
