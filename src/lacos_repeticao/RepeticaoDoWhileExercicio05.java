@@ -14,7 +14,7 @@ public class RepeticaoDoWhileExercicio05 {
             num = read.nextInt();
             
             if (num > 0) {
-            	soma = soma+num;
+            	soma+=num;
     		}
         } 
         while (num != 0);

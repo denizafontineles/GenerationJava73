@@ -2,7 +2,7 @@ package lacos_condicionais;
 
 import java.util.Scanner;
 
-public class CondicionaisExercicio03 {
+public class CondicionaisIfEx03 {
 	public static void main(String[] args) {
 		
 		int idade;

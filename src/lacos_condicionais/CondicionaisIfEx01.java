@@ -2,7 +2,7 @@ package lacos_condicionais;
 
 import java.util.Scanner;
 
-public class CondicionaisExercicio01 {
+public class CondicionaisIfEx01 {
 
 	public static void main(String[] args) {
 		
