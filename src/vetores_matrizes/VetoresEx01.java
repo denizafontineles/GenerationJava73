@@ -7,22 +7,22 @@ public class VetoresEx01 {
 	public static void main(String[] args) {
 		
 		int vetor[] = {2,5,1,3,4,9,7,8,10,6};
-		int num;
+		int numUsuario, posicao = 0;
         
         Scanner read = new Scanner(System.in);
         
         System.out.print("Digite número: ");
-        num = read.nextInt();
+        numUsuario = read.nextInt();
         
         for(int i = 0; i < vetor.length; i++) {
-
-            if(vetor[i] == num) {
-            	System.out.println("O número " + num + 
-            			" está localizado na posição: " + i);
-            }else if(vetor[i] != num){
-            	System.out.println("d");
+        	posicao = i;
+        	if(vetor[i] == numUsuario) {
+            	System.out.println("\nO número " + numUsuario + " está localizado na posição: " + posicao);
             }
         }
+        System.out.println("pos " + posicao);
+        if(posicao == numUsuario) {
+        	System.out.println("\nO número " + numUsuario + " não foi encontrado!");
+        }
 	}
-
 }
