@@ -9,30 +9,30 @@ public class CondicionaisIfEx03 {
 		String nome;
 		boolean primeiraDoacao;
 		
-		Scanner read = new Scanner(System.in);
+		Scanner leia = new Scanner(System.in);
 		
 		System.out.print("Digite seu nome: ");
-		nome = read.next();
+		nome = leia.nextLine();
 		
 		System.out.print("Digite sua idade: ");
-		idade = read.nextInt();
+		idade = leia.nextInt();
 		
 		if (idade >= 18 && idade <= 69) {
 			if (idade >= 60 && idade <= 69){
-				System.out.print("Primeira vez doando sangue? - Responda com true ou false: ");
-				primeiraDoacao = read.nextBoolean();
+				System.out.println("Primeira vez doando sangue? - true ou false: ");
+				primeiraDoacao = leia.nextBoolean();
 				if(primeiraDoacao == true) {
-					System.out.println(nome + " não está apte para doar sangue");
+					System.out.println("\n" + nome + " não está apte para doar sangue");
 				}else {
-					System.out.println(nome + " está apte para doar sangue");
+					System.out.println("\n" + nome + " está apte para doar sangue");
 				}
 			}else {
-				System.out.println(nome + " está apte para doar sangue");
+				System.out.println("\n" + nome + " está apte para doar sangue");
 			}
 		}else {
-			System.out.println(nome + " não está apte para doar sangue");
+			System.out.println("\n" + nome + " não está apte para doar sangue");
 		}
-		read.close();
+		leia.close();
 	}
 
 }
