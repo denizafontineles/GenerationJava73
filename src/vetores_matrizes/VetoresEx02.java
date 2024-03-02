@@ -6,8 +6,7 @@ public class VetoresEx02 {
 	public static void main(String[] args) {
 		
 		int vetor[] = new int[10];
-		float soma = 0;
-		float media = 0;
+		float soma = 0, media = 0;
         Scanner leia = new Scanner(System.in);
         
         for(int i = 0; i < vetor.length; i++) {
