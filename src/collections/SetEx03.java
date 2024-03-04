@@ -21,7 +21,7 @@ public class SetEx03 {
 		
 		Iterator<Integer> x = setNumeros.iterator();
 		
-		System.out.print("\n");
+		System.out.print("\nListar dados do Set: \n\n");
 	
 		while(x.hasNext()) {
 			System.out.println(x.next());
