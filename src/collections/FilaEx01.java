@@ -21,7 +21,6 @@ public class FilaEx01 {
 			System.out.println("0 - Sair");
 			System.out.println("*******************************************************");
 			System.out.print("\n\tEntre com a opção desejada: ");
-
 			op = leia.nextLine();
 			
 			switch (op) {
@@ -57,7 +56,11 @@ public class FilaEx01 {
 					if(fila.isEmpty()) {
 						System.out.println("\n\tA Fila atual está vazia!");
 					}else {
-						System.out.println("\nLista atual de clientes na Fila : " + fila);
+						System.out.println("\nLista atual de clientes na Fila: ");
+						Iterator<String> y = fila.iterator();
+						while(y.hasNext()) {
+							System.out.println(y.next());
+						}
 					}
 				}
 				break;
