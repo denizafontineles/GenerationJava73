@@ -9,11 +9,11 @@ public class FilaEx01 {
 
 	public static void main(String[] args) {
 		Queue<String> fila = new LinkedList<String>();
-		String op = "3";
+		int op;
 		String nome;
 		Scanner leia = new Scanner(System.in);
 	
-		while(!op.equals("0")){
+		while(true){
 			System.out.println("\n\n******************************************************");
 			System.out.println("1 - Adicionar cliente na Fila");
 			System.out.println("2 - Listar todos os clientes");
@@ -21,11 +21,18 @@ public class FilaEx01 {
 			System.out.println("0 - Sair");
 			System.out.println("*******************************************************");
 			System.out.print("\n\tEntre com a opção desejada: ");
-			op = leia.nextLine();
+			op = leia.nextInt();
+			
+			if (op == 0) {
+				System.out.println("\n\tPrograma Finalizado. Até logo!");
+                leia.close();
+				System.exit(0);
+			}
 			
 			switch (op) {
-			case "1":
+			case 1:
 				System.out.print("\nDigite o nome do cliente: ");
+				leia.skip("\\R?");
 				nome = leia.nextLine();
 				fila.add(nome);
 				System.out.print("\n\tCliente adicionado com sucesso!");
@@ -35,7 +42,7 @@ public class FilaEx01 {
 					System.out.println(x.next());
 				}
 				break;
-			case "2":
+			case 2:
 				
 				if(fila.isEmpty()) {
 					System.out.println("\n\tA Fila está vazia!");
@@ -47,7 +54,7 @@ public class FilaEx01 {
 					}
 				}
 				break;
-			case "3":
+			case 3:
 				if(fila.isEmpty()) {
 					System.out.println("\n\tA Fila está vazia!");
 				}else {
@@ -65,11 +72,8 @@ public class FilaEx01 {
 				}
 				break;
 			default:
-				if(!op.equals("0")) {
-					System.out.println("\n\tERROR! Opção inválida!");
-				}
+				System.out.println("\n\tERROR! Opção inválida!");
 			}
 		}
-		System.out.println("\n\tPrograma Finalizado. Até logo!");
 	}
 }
