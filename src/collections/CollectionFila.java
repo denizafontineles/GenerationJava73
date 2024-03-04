@@ -31,9 +31,5 @@ public class CollectionFila {
 		while(x.hasNext()) {
 			System.out.println(x.next() + 1);
 		}
-		
-		
-		
 	}
-
 }
